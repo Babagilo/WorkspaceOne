@@ -7,7 +7,7 @@ This ForgeRock Authentication Tree queries a Mobile Device Management (MDM) syst
 
 A unique identifier is needed for said query, thus you need to leverage the MDM's capability to issue and distribute x509 "mutual certificates" (also known as "browser" or "client" certificates) to each device it enrolls, with the device's unique identifier (populated in the 'CN' field of the x509 certificate).
 
-Since you will also configure Mutual Transport Layer Security (mTLS) on the server running ForgeRock Open Access Manager, each time a device interfaces with ForgeRock, it is requested *and required* to present it's client certificate. 
+Since you will also configure Mutual Transport Layer Security (mTLS) on the server ForgeRock Access Management server, each time a device interfaces with ForgeRock, it is required to present its client certificate. 
 
 The authentication tree below is configured to extract the device's unique identifier from the CN field in the presented certificate; with that in hand, the authentication tree next makes a ReST query to the MDM for Device Posture information.
 
