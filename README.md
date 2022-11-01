@@ -14,8 +14,8 @@ The authentication tree below is configured to extract the device's unique ident
 The MDM can return 1 of 3 results:
 
 1. the device is unknown to the MDM
-2. the device is known to the MDM but fails to pass their Compliance checklist (ie, OS is not up to date, phone is jailbroken, PIN has not been set, etc)
-3. the device is known and it passes their Compliance checklist
+2. the device is known but fails to pass the Compliance checklist (e.g. OS is not up to date, phone is jailbroken, PIN has not been set, etc)
+3. the device is known and passes the Compliance checklist
 
 Only in event #3 is returned does the authentication tree carry on; if #2 is returned an additional step-up challenge could optionally be issued; if #1 is returned tree exits altogether. 
 
