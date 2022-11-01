@@ -3,7 +3,7 @@
 
 # Device Posture - Airwatch - VMware WorkspaceONE
 
-This ForgeRock Authentication Tree queries a Mobile Device Management (MDM) system to see whether or not the end-user's device satisfies a Compliance Policy (ie, checks it's "Device Posture") before it is allowed to access a protected resource.
+This ForgeRock Authentication Tree queries a Mobile Device Management (MDM) system to see whether or not the end-user's device satisfies a Compliance Policy (i.e. checks its "Device Posture") before it is allowed to access a protected resource.
 
 A unique identifier is needed for said query, thus you need to leverage the MDM's capability to issue and distribute x509 "mutual certificates" (also known as "browser" or "client" certificates) to each device it enrolls, with the device's unique identifier (populated in the 'CN' field of the x509 certificate).
 
